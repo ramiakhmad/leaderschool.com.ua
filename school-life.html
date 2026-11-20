@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="uk" data-theme="bright">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Перегляньте фотографії з уроків, спортивних занять і роботи над командними проєктами.">
+<title>Шкільне життя — Odesa Leaders School</title>
+<link rel="icon" href="assets/school-logo.webp" type="image/webp">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="life-reference.css">
+<script>
+try {
+  const options = ['bright', 'editorial', 'night'];
+  const theme = new URLSearchParams(location.search).get('design') || localStorage.getItem('ols-design');
+  if (options.includes(theme)) document.documentElement.dataset.theme = theme;
+} catch {}
+</script>
+<script src="site.js" defer></script>
+<script src="life-reference.js" defer></script>
+</head>
+<body id="top">
+<svg xmlns="http://www.w3.org/2000/svg" class="symbols" aria-hidden="true">
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 10-7 10S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7 3H4a1 1 0 0 0-1 1c0 9 8 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a15 15 0 0 1-7-7l2-2Z"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18h1.5a1.5 1.5 0 0 0 1.4-2c-.4-1-.2-2.2.8-2.7.5-.3 1-.3 1.5-.3h.8a3 3 0 0 0 3-3c0-5.5-4-10-9-10Z"/><path d="M7.5 12h.01M10 7.5h.01M15 7.5h.01M17.5 11.5h.01" stroke-width="2.8"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6a8 8 0 0 0-8-2v14a8 8 0 0 1 8 2 8 8 0 0 1 8-2V4a8 8 0 0 0-8 2Zm0 0v14"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-8 8 9 9 0 0 1-3.5-.7L4 20l1.2-4.1A8 8 0 1 1 20 11.5Z"/><path d="M8.5 11.5h7"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4m8-4v4M4 10h16m-11 5 2 2 4-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s7-3 7-10V5l-7-3-7 3v7c0 7 7 10 7 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3 7h4l2-3h6l2 3h4v13H3Z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5L2 9Zm4 2.1v5.5c4 2.8 8 2.8 12 0v-5.5M22 9v6"/></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3.2"/><path d="M3 20v-2a6 6 0 0 1 12 0v2H3ZM16 4a3 3 0 0 1 0 6m1 3a5 5 0 0 1 4 5v2h-3"/></symbol>
+  <symbol id="life-picture" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m3 17 4-4 4 4 5-6 5 6"/></symbol>
+  <symbol id="life-trophy" viewBox="0 0 24 24"><path d="M8 3h8v6a4 4 0 0 1-8 0V3Zm0 2H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4m-4 2v5m-4 3h8m-7-3h6v3"/></symbol>
+  <symbol id="life-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13M9 9l12-2"/><ellipse cx="6" cy="18" rx="3" ry="2.5"/><ellipse cx="18" cy="16" rx="3" ry="2.5"/></symbol>
+  <symbol id="life-ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m12 8 4 3-1.5 4.5h-5L8 11l4-3Zm0 0V3m4 8 4.7-1.5M14.5 15.5l3 3.6m-8-3.6-3 3.6M8 11 3.3 9.5"/></symbol>
+  <symbol id="life-leaf" viewBox="0 0 24 24"><path d="M20 4C9 4 5 7 5 13s5 7 9 5c4-2 6-7 6-14ZM4 21l10-10"/></symbol>
+  <symbol id="life-heart" viewBox="0 0 24 24"><path d="M20.2 5.9a5 5 0 0 0-7.1 0L12 7l-1.1-1.1a5 5 0 0 0-7.1 7.1L12 21l8.2-8a5 5 0 0 0 0-7.1Z"/></symbol>
+  <symbol id="life-science" viewBox="0 0 24 24"><path d="M9 3h6m-5 0v7L5 19a1 1 0 0 0 1 2h12a1 1 0 0 0 1-2l-5-9V3m-6 13h8"/></symbol>
+  <symbol id="life-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+  <symbol id="life-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+  <symbol id="life-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4V8Z"/></symbol>
+</svg>
+<a class="skip" href="#main">Перейти до вмісту</a>
+<header class="header">
+  <div class="wrap nav-wrap">
+    <a class="brand" href="index.html" aria-label="Odesa Leaders School, головна">
+      <img class="brand-image" src="assets/logo.webp" width="47" height="47" alt=""><span class="brand-mark" hidden>L<span>.</span></span>
+      <span class="brand-text" lang="en">Leaders<span>School</span></span>
+    </a>
+    <nav id="navigation" class="nav" aria-label="Головна навігація">
+      <a href="index.html" class="nav-home">Головна</a>
+      <a href="about.html">Про школу</a>
+      <a href="programs.html">Навчання</a>
+      <a href="school-life.html" aria-current="page">Шкільне життя</a>
+      <a href="news.html">Новини</a>
+      <a href="admissions.html" class="nav-admissions">Вступ</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="design-button" type="button" id="open-design" aria-label="Обрати дизайн"><svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg><span><span class="design-verb">Обрати </span>дизайн</span></button>
+      <a class="button primary header-enroll" href="admissions.html?kind=tour#request"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Запис на зустріч</a>
+      <button class="icon-button menu-button" id="menu-button" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="navigation"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main" class="inner-page reference-page life-reference">
+  <section class="life-hero" aria-labelledby="life-title">
+    <div class="life-hero-art">
+      <img src="assets/mascot.webp" width="818" height="941" alt="Мальований хлопчик із зеленим ноутбуком" fetchpriority="high">
+      <span class="life-rays" aria-hidden="true"></span>
+    </div>
+    <div class="wrap life-hero-inner">
+      <nav class="breadcrumbs" aria-label="Шлях до сторінки"><a href="index.html">Головна</a><span aria-hidden="true">›</span><span aria-current="page">Шкільне життя</span></nav>
+      <div class="life-hero-copy">
+        <h1 id="life-title">Шкільне життя<span class="life-rays" aria-hidden="true"></span></h1>
+        <p>Події, цікаві проєкти, творчість, спорт і дружня шкільна спільнота — усе, що робить навчання в Leaders School особливим.</p>
+        <div class="life-actions">
+          <a class="button primary" href="#events"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Календар подій</a>
+          <a class="button secondary" href="https://www.instagram.com/odesa_leaders_school/reels/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#life-play"/></svg> Відео в Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap life-content" id="life" aria-label="Шкільні заняття й галерея">
+    <div class="filter-row" role="group" aria-label="Категорії фотографій" hidden>
+      <button type="button" data-filter="all" aria-controls="gallery" aria-pressed="true"><svg class="icon" aria-hidden="true"><use href="#life-picture"/></svg>Усі події</button>
+      <button type="button" data-filter="lessons" aria-controls="gallery" aria-pressed="false"><svg class="icon life-green" aria-hidden="true"><use href="#i-cap"/></svg>Навчання</button>
+      <button type="button" data-filter="contests" aria-controls="gallery" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#life-trophy"/></svg>Конкурси</button>
+      <button type="button" data-filter="creative" aria-controls="gallery" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#life-music"/></svg>Творчість</button>
+      <button type="button" data-filter="sport" aria-controls="gallery" aria-pressed="false"><svg class="icon life-blue" aria-hidden="true"><use href="#life-ball"/></svg>Спорт</button>
+      <button type="button" data-filter="projects" aria-controls="gallery" aria-pressed="false"><svg class="icon life-green" aria-hidden="true"><use href="#life-leaf"/></svg>Проєкти</button>
+      <button type="button" data-filter="space" aria-controls="gallery" aria-pressed="false"><svg class="icon life-blue" aria-hidden="true"><use href="#i-people"/></svg>Екскурсії</button>
+      <button type="button" data-filter="volunteering" aria-controls="gallery" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#life-heart"/></svg>Волонтерство</button>
+    </div>
+
+    <section class="life-block" aria-labelledby="life-details-title">
+      <h2 class="life-heading" id="life-details-title">Наше шкільне життя в деталях<span class="life-rays" aria-hidden="true"></span></h2>
+      <div class="life-collage">
+        <a class="life-card life-card-lead" href="#gallery" data-life-filter="lessons">
+          <img src="assets/english.webp" alt="" loading="lazy">
+          <span class="life-card-body"><span class="life-card-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span><span><strong>Навчання</strong><small>Сучасні методики та практичні проєкти</small></span><span class="life-next"><svg class="icon" aria-hidden="true"><use href="#life-right"/></svg></span></span>
+        </a>
+        <a class="life-card" href="#gallery" data-life-filter="lessons">
+          <img src="assets/science.webp" alt="" loading="lazy">
+          <span class="life-card-body"><span class="life-card-icon"><svg class="icon" aria-hidden="true"><use href="#life-science"/></svg></span><strong>STEM та наука</strong><span class="life-next"><svg class="icon" aria-hidden="true"><use href="#life-right"/></svg></span></span>
+        </a>
+        <a class="life-card" href="#gallery" data-life-filter="projects">
+          <img src="assets/projects.webp" alt="" loading="lazy">
+          <span class="life-card-body"><span class="life-card-icon"><svg class="icon" aria-hidden="true"><use href="#life-music"/></svg></span><strong>Творчість і проєкти</strong><span class="life-next"><svg class="icon" aria-hidden="true"><use href="#life-right"/></svg></span></span>
+        </a>
+        <a class="life-card" href="#gallery" data-life-filter="sport">
+          <img src="assets/sport.webp" alt="" loading="lazy">
+          <span class="life-card-body"><span class="life-card-icon"><svg class="icon" aria-hidden="true"><use href="#life-ball"/></svg></span><strong>Спорт і активність</strong><span class="life-next"><svg class="icon" aria-hidden="true"><use href="#life-right"/></svg></span></span>
+        </a>
+        <a class="life-card" href="admissions.html?kind=tour#request">
+          <img src="assets/building.webp" alt="" loading="lazy">
+          <span class="life-card-body"><span class="life-card-icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span><strong>Екскурсія до школи</strong><span class="life-next"><svg class="icon" aria-hidden="true"><use href="#life-right"/></svg></span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="life-block" aria-labelledby="life-gallery-title">
+      <div class="life-section-head">
+        <h2 class="life-heading" id="life-gallery-title">Галерея подій<span class="life-rays" aria-hidden="true"></span></h2>
+        <a class="button secondary life-gallery-link" href="https://www.instagram.com/odesa_leaders_school/" target="_blank" rel="noopener">Усі фото та відео</a>
+      </div>
+      <div class="life-carousel">
+        <div class="gallery" id="gallery" aria-label="Фотогалерея школи" tabindex="0">
+          <button class="gallery-photo" type="button" data-category="lessons"><img loading="lazy" src="assets/primary.webp" alt="Заняття учнів початкової школи"><span>Початкові класи</span></button>
+          <button class="gallery-photo" type="button" data-category="sport"><img loading="lazy" src="assets/sport.webp" alt="Учні на спортивному тренуванні"><span>Спортивне заняття</span></button>
+          <button class="gallery-photo" type="button" data-category="lessons"><img loading="lazy" src="assets/science.webp" alt="Практичне заняття з природознавства"><span>Природознавство</span></button>
+          <button class="gallery-photo" type="button" data-category="projects"><img loading="lazy" src="assets/projects.webp" alt="Учні працюють у команді над проєктом"><span>Командна робота</span></button>
+          <button class="gallery-photo" type="button" data-category="lessons"><img loading="lazy" src="assets/english.webp" alt="Урок англійської мови у Leaders School"><span>Урок англійської</span></button>
+          <button class="gallery-photo" type="button" data-category="space"><img loading="lazy" src="assets/building.webp" alt="Будівля Odesa Leaders School"><span>Будівля школи</span></button>
+        </div>
+        <button class="life-slider-button life-slider-previous" type="button" data-gallery-scroll="-1" aria-label="Попередні фото" aria-controls="gallery" hidden><svg class="icon" aria-hidden="true"><use href="#life-left"/></svg></button>
+        <button class="life-slider-button life-slider-next" type="button" data-gallery-scroll="1" aria-label="Наступні фото" aria-controls="gallery" hidden><svg class="icon" aria-hidden="true"><use href="#life-right"/></svg></button>
+      </div>
+      <div class="gallery-fallback" id="gallery-fallback" hidden>Фото цієї категорії можна запитати у школи або переглянути <a href="https://www.instagram.com/odesa_leaders_school/" target="_blank" rel="noopener">оновлення в Instagram</a>.</div>
+    </section>
+
+    <div class="life-calendar" id="events">
+      <section aria-labelledby="life-activities-title">
+        <h2 class="life-heading" id="life-activities-title">Розклад активностей<span class="life-rays" aria-hidden="true"></span></h2>
+        <p class="life-section-note">Зразок розкладу. Актуальні години уточнюйте в адміністрації.</p>
+        <div class="life-agenda">
+          <div class="life-week" role="group" aria-label="Дні тижня" hidden>
+            <button type="button" data-agenda-day="mon" aria-label="Понеділок" aria-pressed="true">Пн</button>
+            <button type="button" data-agenda-day="tue" aria-label="Вівторок" aria-pressed="false">Вт</button>
+            <button type="button" data-agenda-day="wed" aria-label="Середа" aria-pressed="false">Ср</button>
+            <button type="button" data-agenda-day="thu" aria-label="Четвер" aria-pressed="false">Чт</button>
+            <button type="button" data-agenda-day="fri" aria-label="П’ятниця" aria-pressed="false">Пт</button>
+          </div>
+          <ul class="life-activity-list">
+            <li data-activity-days="mon wed"><span class="life-time">14:00–15:00</span><svg class="icon" aria-hidden="true"><use href="#life-science"/></svg><span><strong>STEM-клуб</strong><small>Наукові експерименти та проєкти</small></span></li>
+            <li data-activity-days="mon tue thu"><span class="life-time">15:00–16:00</span><svg class="icon" aria-hidden="true"><use href="#life-ball"/></svg><span><strong>Спортивна секція</strong><small>Командні ігри та рухові вправи</small></span></li>
+            <li data-activity-days="mon wed fri"><span class="life-time">16:00–17:00</span><svg class="icon" aria-hidden="true"><use href="#life-music"/></svg><span><strong>Музична студія</strong><small>Вокал, інструменти й ансамбль</small></span></li>
+            <li data-activity-days="mon tue thu fri"><span class="life-time">17:00–18:00</span><svg class="icon" aria-hidden="true"><use href="#life-leaf"/></svg><span><strong>Артмайстерня</strong><small>Малювання, дизайн і творчість</small></span></li>
+          </ul>
+        </div>
+      </section>
+      <section aria-labelledby="life-events-title">
+        <h2 class="life-heading" id="life-events-title">Найближчі події<span class="life-rays" aria-hidden="true"></span></h2>
+        <p class="life-section-note">Підтверджені дати школа повідомляє в оголошеннях.</p>
+        <div class="life-event-list">
+          <a class="life-event" href="admissions.html?kind=tour#request"><img src="assets/building.webp" alt="" loading="lazy"><span><small><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> За домовленістю</small><strong>Екскурсія до Leaders School</strong><small>Познайомтеся зі школою та командою</small></span><span class="life-next"><svg class="icon" aria-hidden="true"><use href="#life-right"/></svg></span></a>
+          <a class="life-event" href="news.html"><img src="assets/science.webp" alt="" loading="lazy"><span><small><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Оголошення школи</small><strong>Новини та події</strong><small>Навчання, експерименти й учнівські проєкти</small></span><span class="life-next"><svg class="icon" aria-hidden="true"><use href="#life-right"/></svg></span></a>
+          <a class="life-event" href="https://www.instagram.com/odesa_leaders_school/" target="_blank" rel="noopener"><img src="assets/projects.webp" alt="" loading="lazy"><span><small><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Шкільні оновлення</small><strong>Анонси в Instagram</strong><small>Що відбувається в житті школи</small></span><span class="life-next"><svg class="icon" aria-hidden="true"><use href="#life-right"/></svg></span></a>
+        </div>
+      </section>
+    </div>
+
+    <div class="life-join">
+      <h2>Стань частиною <span>яскравого шкільного життя!</span></h2>
+      <p>Навчання, розвиток, друзі, проєкти та події чекають на тебе в Leaders School.</p>
+      <a class="button primary" href="admissions.html?kind=admission#request"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Подати заявку<br>на навчання</a>
+    </div>
+  </section>
+</main>
+<footer class="school-footer">
+  <div class="wrap footer-wrap">
+    <a class="brand" href="index.html" aria-label="Odesa Leaders School, головна">
+      <img class="brand-image" src="assets/logo.webp" width="47" height="47" alt=""><span class="brand-mark" hidden>L<span>.</span></span>
+      <span class="brand-text" lang="en">Leaders<span>School</span></span>
+    </a>
+    <p class="footer-motto">Освіта, що допомагає дітям розкрити свої здібності.</p>
+    <ul class="footer-contacts">
+      <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><a href="contacts.html">Курортний провулок, 2, будинок 1, Одеса</a></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+380671212555">+380 67 121 25 55</a></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:odesa.leaders.school@gmail.com">odesa.leaders.school@gmail.com</a></li>
+    </ul>
+    <ul class="footer-social" aria-label="Соціальні мережі школи">
+      <li><a href="https://www.instagram.com/odesa_leaders_school/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=61561097815403" target="_blank" rel="noopener">Facebook</a></li>
+    </ul>
+  </div>
+</footer>
+
+<dialog id="design-dialog" aria-labelledby="design-title">
+  <div class="dialog-head"><div><p class="eyebrow">Оформлення сайту</p><h2 id="design-title">Оберіть дизайн</h2></div><button class="icon-button close-dialog" type="button" aria-label="Закрити"><svg class="icon"><use href="#i-x"/></svg></button></div>
+  <p class="dialog-note">Перемикайте варіанти, щоб побачити зміни. Ваш вибір збережеться у цьому браузері.</p>
+  <div class="theme-options" role="group" aria-label="Варіанти дизайну">
+    <button class="theme-option" data-design="bright" type="button" aria-pressed="true"><span class="theme-preview theme-bright" aria-hidden="true"><i></i><b></b><img src="assets/mascot.webp" alt="" width="818" height="941"></span><span class="option-label"><span>Яскравий</span><svg class="icon"><use href="#i-check"/></svg></span><small>Фірмовий помаранчевий</small></button>
+    <button class="theme-option" data-design="editorial" type="button" aria-pressed="false"><span class="theme-preview theme-editorial" aria-hidden="true"><i></i><b></b><img src="assets/mascot.webp" alt="" width="818" height="941"></span><span class="option-label"><span>Академічний</span><svg class="icon"><use href="#i-check"/></svg></span><small>Молочний і бордовий</small></button>
+    <button class="theme-option" data-design="night" type="button" aria-pressed="false"><span class="theme-preview theme-night" aria-hidden="true"><i></i><b></b><img src="assets/mascot.webp" alt="" width="818" height="941"></span><span class="option-label"><span>Нічний</span><svg class="icon"><use href="#i-check"/></svg></span><small>Темно-синій і м’ятний</small></button>
+  </div>
+  <div class="dialog-foot"><button type="button" class="button primary close-dialog">Готово</button></div>
+</dialog>
+
+<dialog id="photo-dialog" class="photo-dialog" aria-label="Фото зі шкільної галереї">
+  <button class="icon-button close-dialog" type="button" aria-label="Закрити"><svg class="icon"><use href="#i-x"/></svg></button>
+  <figure><img id="large-photo" alt=""><figcaption id="photo-caption"></figcaption></figure>
+</dialog>
+</body>
+</html>

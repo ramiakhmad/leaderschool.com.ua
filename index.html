@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="uk" data-theme="bright">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Odesa Leaders School — приватна школа для учнів 1–11 класів в Одесі. Дізнайтеся про програми, умови навчання та запишіться на екскурсію.">
+<title>Odesa Leaders School — приватна школа в Одесі</title>
+<link rel="icon" href="assets/school-logo.webp" type="image/webp">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="home-reference.css">
+<script>
+try {
+  const options = ['bright', 'editorial', 'night'];
+  const theme = new URLSearchParams(location.search).get('design') || localStorage.getItem('ols-design');
+  if (options.includes(theme)) document.documentElement.dataset.theme = theme;
+} catch {}
+</script>
+<script src="site.js" defer></script>
+</head>
+<body id="top">
+<svg xmlns="http://www.w3.org/2000/svg" class="symbols" aria-hidden="true">
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 10-7 10S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7 3H4a1 1 0 0 0-1 1c0 9 8 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a15 15 0 0 1-7-7l2-2Z"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18h1.5a1.5 1.5 0 0 0 1.4-2c-.4-1-.2-2.2.8-2.7.5-.3 1-.3 1.5-.3h.8a3 3 0 0 0 3-3c0-5.5-4-10-9-10Z"/><path d="M7.5 12h.01M10 7.5h.01M15 7.5h.01M17.5 11.5h.01" stroke-width="2.8"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6a8 8 0 0 0-8-2v14a8 8 0 0 1 8 2 8 8 0 0 1 8-2V4a8 8 0 0 0-8 2Zm0 0v14"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-8 8 9 9 0 0 1-3.5-.7L4 20l1.2-4.1A8 8 0 1 1 20 11.5Z"/><path d="M8.5 11.5h7"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4m8-4v4M4 10h16m-11 5 2 2 4-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s7-3 7-10V5l-7-3-7 3v7c0 7 7 10 7 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3 7h4l2-3h6l2 3h4v13H3Z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5L2 9Zm4 2.1v5.5c4 2.8 8 2.8 12 0v-5.5M22 9v6"/></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3.2"/><path d="M3 20v-2a6 6 0 0 1 12 0v2H3ZM16 4a3 3 0 0 1 0 6m1 3a5 5 0 0 1 4 5v2h-3"/></symbol>
+</svg>
+<a class="skip" href="#main">Перейти до вмісту</a>
+<header class="header">
+  <div class="wrap nav-wrap">
+    <a class="brand" href="index.html" aria-label="Odesa Leaders School, головна">
+      <img class="brand-image" src="assets/logo.webp" width="47" height="47" alt=""><span class="brand-mark" hidden>L<span>.</span></span>
+      <span class="brand-text" lang="en">Leaders<span>School</span></span>
+    </a>
+    <nav id="navigation" class="nav" aria-label="Головна навігація">
+      <a href="index.html" aria-current="page" class="nav-home">Головна</a>
+      <a href="about.html">Про школу</a>
+      <a href="programs.html">Навчання</a>
+      <a href="school-life.html">Шкільне життя</a>
+      <a href="news.html">Новини</a>
+      <a href="admissions.html" class="nav-admissions">Вступ</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="design-button" type="button" id="open-design" aria-label="Обрати дизайн"><svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg><span><span class="design-verb">Обрати </span>дизайн</span></button>
+      <a class="button primary header-enroll" href="admissions.html?kind=tour#request"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Запис на зустріч</a>
+      <button class="icon-button menu-button" id="menu-button" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="navigation"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main" class="home-reference">
+  <section class="home-top" aria-labelledby="hero-title">
+    <div class="hero home-hero">
+      <div class="hero-content">
+        <h1 id="hero-title" lang="en">Leaders <em>School</em></h1>
+        <p class="hero-lead">Сучасна приватна школа<br>I–III ступенів в Одесі</p>
+        <p class="hero-description">Допомагаємо учням 1–11 класів здобувати знання, розвивати таланти й упевнено рухатися вперед.</p>
+        <div class="actions">
+          <a class="button primary" href="admissions.html#request"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Запис на навчання</a>
+          <a class="button secondary" href="about.html"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg> Познайомитися зі школою</a>
+        </div>
+        <a class="hero-phone" href="tel:+380671212555"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> +380 67 121 25 55</a>
+      </div>
+      <div class="hero-visual">
+        <div class="home-orbit" aria-hidden="true"></div>
+        <svg class="burst" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-spark"/></svg>
+        <img class="mascot" src="assets/mascot.webp" width="818" height="941" alt="Мальований хлопчик із зеленим ноутбуком" fetchpriority="high">
+      </div>
+    </div>
+    <ul class="wrap home-perks" aria-label="Переваги Leaders School">
+      <li><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg><strong>Сучасна <br>освіта</strong></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg><strong>До 15 учнів <br>у класі</strong></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg><strong>Розвиток <br>талантів</strong></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><strong>Безпечне <br>середовище</strong></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><strong>Індивідуальний <br>підхід</strong></li>
+    </ul>
+  </section>
+
+  <section class="wrap home-section" id="programs">
+    <div class="home-heading">
+      <h2>Освітні програми <em>Leaders School</em></h2>
+      <a class="button secondary home-pill" href="programs.html">Усі програми</a>
+    </div>
+    <div class="stage-grid" id="curriculum">
+      <a class="stage-card stage-peach" href="programs.html#programs"><span class="stage-media"><img src="assets/primary.webp" alt="" loading="lazy"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span></span><span class="stage-copy"><strong>Початкова школа</strong><span>1–4 класи</span></span></a>
+      <a class="stage-card stage-blue" href="programs.html#programs"><span class="stage-media"><img src="assets/english.webp" alt="" loading="lazy"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span></span><span class="stage-copy"><strong>Середня школа</strong><span>5–9 класи</span></span></a>
+      <a class="stage-card stage-lilac" href="programs.html#programs"><span class="stage-media"><img src="assets/projects.webp" alt="" loading="lazy"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span></span><span class="stage-copy"><strong>Старша школа</strong><span>10–11 класи</span></span></a>
+      <a class="stage-card stage-mint" href="programs.html#curriculum"><span class="stage-media"><img src="assets/science.webp" alt="" loading="lazy"><span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg></span></span><span class="stage-copy"><strong>Профільні напрями</strong><span>Англійська, лідерство, YEP</span></span></a>
+    </div>
+  </section>
+
+  <section class="wrap home-section home-why" id="about">
+    <div id="advantages">
+      <h2>Чому обирають нас?</h2>
+      <ul class="advantage-list">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> НУШ та «Інтелект України»</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Поглиблена англійська</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Командні та підприємницькі проєкти</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Гуртки, творчість і спорт</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Безпечне середовище</li>
+      </ul>
+      <a class="text-link home-team" id="team" href="about.html#team">Команда школи</a>
+    </div>
+    <a class="home-building" href="about.html#about">
+      <img src="assets/building.webp" alt="" loading="lazy">
+      <span>Більше про школу</span>
+    </a>
+    <ul class="home-figures" aria-label="Навчання у цифрах і фактах">
+      <li><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg><div><strong>1–11</strong><span>класи</span></div></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg><div><strong>До 15</strong><span>учнів у класі</span></div></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><div><strong>Pearson</strong><span>програма з англійської</span></div></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg><div><strong>YEP</strong><span>підприємницькі проєкти</span></div></li>
+    </ul>
+  </section>
+
+  <section class="wrap home-preview home-life" id="life" aria-labelledby="home-life-title">
+    <div class="home-preview-head">
+      <h2 id="home-life-title">Шкільне життя</h2>
+      <a class="home-preview-link" href="school-life.html#life">Переглянути галерею</a>
+    </div>
+    <div class="home-gallery" id="gallery" aria-label="Фотогалерея школи">
+      <button class="home-gallery-photo" type="button" data-category="lessons"><img loading="lazy" src="assets/primary.webp" alt="Заняття учнів початкової школи"></button>
+      <button class="home-gallery-photo" type="button" data-category="sport"><img loading="lazy" src="assets/sport.webp" alt="Учні на спортивному тренуванні"></button>
+      <button class="home-gallery-photo" type="button" data-category="projects"><img loading="lazy" src="assets/projects.webp" alt="Учні працюють у команді над проєктом"></button>
+      <button class="home-gallery-photo" type="button" data-category="lessons"><img loading="lazy" src="assets/science.webp" alt="Практичне заняття з природознавства"></button>
+      <button class="home-gallery-photo" type="button" data-category="lessons"><img loading="lazy" src="assets/english.webp" alt="Урок англійської мови у Leaders School"></button>
+    </div>
+    <p id="gallery-fallback" hidden>Фотографії можна переглянути на сторінці <a href="school-life.html#life">«Шкільне життя»</a>.</p>
+  </section>
+
+  <section class="wrap home-preview home-news" id="news" aria-labelledby="home-news-title">
+    <div class="home-preview-head">
+      <h2 id="home-news-title">Новини та події</h2>
+      <a class="home-preview-link" href="news.html">Усі новини</a>
+    </div>
+    <div class="home-news-grid">
+      <article class="home-news-card">
+        <img src="assets/english.webp" alt="" loading="lazy">
+        <div><p class="home-news-category">Навчання</p><h3>Англійська за програмою Pearson</h3><a class="home-preview-link" href="programs.html#curriculum">Про програму</a></div>
+      </article>
+      <article class="home-news-card">
+        <img src="assets/science.webp" alt="" loading="lazy">
+        <div><p class="home-news-category">Шкільне життя</p><h3>Природознавство на практиці</h3><a class="home-preview-link" href="school-life.html?gallery=lessons#life">Фото з уроків</a></div>
+      </article>
+      <article class="home-news-card">
+        <img src="assets/building.webp" alt="" loading="lazy">
+        <div><p class="home-news-category">Вступ</p><h3>Школа запрошує на екскурсію</h3><a class="home-preview-link" href="admissions.html?kind=tour#request">Записатися</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap home-contact-strip" id="admissions" aria-labelledby="home-visit">
+    <h2 id="home-visit">Завітайте до Leaders School</h2>
+    <div class="home-contact-actions" id="request">
+      <a class="button primary" href="admissions.html?kind=tour#request">Записатися на екскурсію</a>
+      <a class="button secondary" href="contacts.html">Контакти школи</a>
+    </div>
+  </section>
+</main>
+<footer class="school-footer" id="contacts">
+  <div class="wrap footer-wrap">
+    <a class="brand" href="index.html" aria-label="Odesa Leaders School, головна">
+      <img class="brand-image" src="assets/logo.webp" width="47" height="47" alt=""><span class="brand-mark" hidden>L<span>.</span></span>
+      <span class="brand-text" lang="en">Leaders<span>School</span></span>
+    </a>
+    <p class="footer-motto">Освіта, що допомагає дітям розкрити свої здібності.</p>
+    <ul class="footer-contacts">
+      <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><a href="contacts.html">Курортний провулок, 2, будинок 1, Одеса</a></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+380671212555">+380 67 121 25 55</a></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:odesa.leaders.school@gmail.com">odesa.leaders.school@gmail.com</a></li>
+    </ul>
+    <ul class="footer-social" aria-label="Соціальні мережі школи">
+      <li><a href="https://www.instagram.com/odesa_leaders_school/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=61561097815403" target="_blank" rel="noopener">Facebook</a></li>
+    </ul>
+  </div>
+</footer>
+
+<dialog id="design-dialog" aria-labelledby="design-title">
+  <div class="dialog-head"><div><p class="eyebrow">Оформлення сайту</p><h2 id="design-title">Оберіть дизайн</h2></div><button class="icon-button close-dialog" type="button" aria-label="Закрити"><svg class="icon"><use href="#i-x"/></svg></button></div>
+  <p class="dialog-note">Перемикайте варіанти, щоб побачити зміни. Ваш вибір збережеться у цьому браузері.</p>
+  <div class="theme-options" role="group" aria-label="Варіанти дизайну">
+    <button class="theme-option" data-design="bright" type="button" aria-pressed="true"><span class="theme-preview theme-bright" aria-hidden="true"><i></i><b></b><img src="assets/mascot.webp" alt="" width="818" height="941"></span><span class="option-label"><span>Яскравий</span><svg class="icon"><use href="#i-check"/></svg></span><small>Фірмовий помаранчевий</small></button>
+    <button class="theme-option" data-design="editorial" type="button" aria-pressed="false"><span class="theme-preview theme-editorial" aria-hidden="true"><i></i><b></b><img src="assets/mascot.webp" alt="" width="818" height="941"></span><span class="option-label"><span>Академічний</span><svg class="icon"><use href="#i-check"/></svg></span><small>Молочний і бордовий</small></button>
+    <button class="theme-option" data-design="night" type="button" aria-pressed="false"><span class="theme-preview theme-night" aria-hidden="true"><i></i><b></b><img src="assets/mascot.webp" alt="" width="818" height="941"></span><span class="option-label"><span>Нічний</span><svg class="icon"><use href="#i-check"/></svg></span><small>Темно-синій і м’ятний</small></button>
+  </div>
+  <div class="dialog-foot"><button type="button" class="button primary close-dialog">Готово</button></div>
+</dialog>
+
+<dialog id="photo-dialog" class="photo-dialog" aria-label="Фото зі шкільної галереї">
+  <button class="icon-button close-dialog" type="button" aria-label="Закрити"><svg class="icon"><use href="#i-x"/></svg></button>
+  <figure><img id="large-photo" alt=""><figcaption id="photo-caption"></figcaption></figure>
+</dialog>
+</body>
+</html>

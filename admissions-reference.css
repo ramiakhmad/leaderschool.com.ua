@@ -1,0 +1,59 @@
+.ref-admit { position: relative; isolation: isolate; overflow: hidden; padding: 20px 0 clamp(36px, 5vw, 72px); }
+.ref-admit::after { content: ""; position: absolute; z-index: -2; width: min(82%, 1250px); height: 80%; left: 23%; bottom: 2%; background: var(--ref-orange); border-radius: 58% 20% 49% 25% / 65% 25% 71% 31%; transform: rotate(-12deg); }
+.ref-admit-trail { margin: 5px 0 14px; }
+.ref-admit-layout { display: grid; grid-template-columns: minmax(0, .97fr) minmax(0, .83fr) minmax(0, 1.53fr); gap: 0; align-items: center; }
+.ref-admit-intro { position: relative; z-index: 2; align-self: start; padding: clamp(15px, 3vw, 45px) 0 10px; }
+.ref-admit h1 { font-size: clamp(2.7rem, 5.55vw, 5.1rem); line-height: .98; letter-spacing: -.07em; }
+.ref-admit h1 span { display: block; width: fit-content; position: relative; }
+.ref-admit h1 span::after { content: ""; position: absolute; left: 1%; bottom: -.17em; width: 96%; height: .11em; background: var(--ref-highlight); border-radius: 100%; transform: rotate(-2.4deg); }
+.ref-admit-intro > p { max-width: 28ch; margin: 1.55rem 0 1.4rem; line-height: 1.42; font-weight: 700; }
+.ref-admit-benefits { list-style: none; display: grid; gap: 13px; margin: 0; padding: 0; }
+.ref-admit-benefits li { display: flex; align-items: center; gap: 11px; font-size: clamp(.88rem, 1.32vw, 1.06rem); line-height: 1.25; }
+.ref-admit-benefits li > span { width: 47px; height: 47px; display: grid; place-items: center; flex: 0 0 auto; border-radius: 15px; background: var(--surface); color: var(--accent); box-shadow: 0 2px 7px #38230d20; }
+.ref-admit-benefits .icon { width: 28px; height: 28px; }
+.ref-admit-art { align-self: end; position: relative; min-width: 0; height: 100%; pointer-events: none; }
+.ref-admit-art img { position: absolute; z-index: 1; bottom: -14px; left: 45%; transform: translateX(-50%); width: clamp(300px, 35vw, 545px); max-width: none; height: auto; filter: drop-shadow(0 14px 12px #311e1c35); }
+.ref-admit-art .burst { top: 17%; right: 13%; color: white; }
+.ref-admit-card { z-index: 3; background: var(--surface); border: 1px solid var(--line); border-radius: clamp(23px, 4vw, 48px); box-shadow: 0 12px 38px #38230d18; padding: clamp(18px, 2.8vw, 39px); min-width: 0; }
+.ref-admit-card-head { display: flex; gap: .78rem; align-items: flex-start; margin: 0 0 16px; }
+.ref-admit-card-head > span { display: grid; place-items: center; flex: 0 0 auto; width: 48px; height: 48px; border-radius: 50%; color: var(--primary-ink); background: var(--ref-button); font-size: 1.5rem; }
+.ref-admit-card h2 { font-size: clamp(1.57rem, 2.95vw, 2.55rem); line-height: 1.08; }
+.ref-admit-card-head p { font-size: .91rem; color: var(--muted); margin: .5rem 0 0; line-height: 1.45; }
+.ref-admit-card #request-form { gap: 9px; }
+#request-form .ref-field { border-radius: 24px; border: 1px solid var(--line); background: var(--bg); min-height: 51px; display: flex; align-items: center; gap: 11px; padding: 5px 15px; cursor: text; }
+#request-form .ref-field > .icon { color: var(--accent); width: 22px; height: 22px; }
+#request-form .ref-field > span { flex: 1; min-width: 0; font-size: .88rem; font-weight: 800; line-height: 1.15; }
+#request-form .ref-field b { color: var(--accent); }
+#request-form .ref-field input, #request-form .ref-field select { display: block; min-height: 24px; padding: 2px 0; border: 0; border-radius: 0; background-color: transparent; font-weight: 600; }
+#request-form .ref-field select { padding-right: 25px; }
+#request-form .ref-field:focus-within { border-color: var(--accent); }
+#request-form .ref-field :focus-visible { outline-offset: 0; outline-width: 2px; }
+.ref-admit-card #request-form button { width: 100%; margin-top: 4px; border-radius: 40px; background: var(--ref-button); }
+.ref-admit-note { display: flex; gap: 9px; align-items: center; margin: 14px 0 0; padding-inline: 10px; color: var(--muted); font-size: .84rem; line-height: 1.4; }
+.ref-admit-note svg { width: 22px; height: 22px; }
+.ref-admit-questions { padding-block: 8px 56px; }
+.ref-admit-questions h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); }
+.ref-admit-questions .admissions-questions { max-width: 730px; }
+
+@media (max-width: 960px) {
+  .ref-admit-layout { grid-template-columns: minmax(0, 1.1fr) minmax(0, .57fr) minmax(0, 1.7fr); }
+  .ref-admit-art img { left: 48%; width: clamp(235px, 36vw, 380px); }
+}
+@media (max-width: 740px) {
+  .ref-admit-layout { grid-template-columns: minmax(0, 1fr) minmax(0, .85fr); row-gap: 18px; }
+  .ref-admit-intro { padding-top: 8px; }
+  .ref-admit-card { grid-column: 1 / -1; }
+  .ref-admit-art img { width: clamp(150px, 48vw, 310px); max-height: 100%; object-fit: contain; object-position: bottom; left: 50%; bottom: 0; }
+  .ref-admit::after { top: 10%; left: 35%; height: 43%; width: 79%; }
+}
+@media (max-width: 440px) {
+  .ref-admit-layout { grid-template-columns: minmax(0, 1.18fr) minmax(0, .82fr); }
+  .ref-admit h1 { font-size: clamp(1.95rem, 8.3vw, 2.65rem); }
+  .ref-admit-intro > p { font-size: .91rem; }
+  .ref-admit-benefits { gap: 8px; }
+  .ref-admit-benefits li { font-size: .82rem; gap: 7px; }
+  .ref-admit-benefits li > span { width: 34px; height: 34px; border-radius: 10px; }
+  .ref-admit-benefits .icon { width: 20px; height: 20px; }
+  .ref-admit-art img { left: 47%; width: clamp(135px, 47vw, 190px); }
+  .ref-admit::after { top: 16%; left: 47%; height: 27%; }
+}

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="uk" data-theme="bright">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Підготуйте звернення щодо вступу, екскурсії чи консультації з адміністрацією школи.">
+<title>Вступ — Odesa Leaders School</title>
+<link rel="icon" href="assets/school-logo.webp" type="image/webp">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="admissions-reference.css">
+<script>
+try {
+  const options = ['bright', 'editorial', 'night'];
+  const theme = new URLSearchParams(location.search).get('design') || localStorage.getItem('ols-design');
+  if (options.includes(theme)) document.documentElement.dataset.theme = theme;
+} catch {}
+</script>
+<script src="site.js" defer></script>
+</head>
+<body id="top">
+<svg xmlns="http://www.w3.org/2000/svg" class="symbols" aria-hidden="true">
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 10-7 10S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7 3H4a1 1 0 0 0-1 1c0 9 8 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a15 15 0 0 1-7-7l2-2Z"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18h1.5a1.5 1.5 0 0 0 1.4-2c-.4-1-.2-2.2.8-2.7.5-.3 1-.3 1.5-.3h.8a3 3 0 0 0 3-3c0-5.5-4-10-9-10Z"/><path d="M7.5 12h.01M10 7.5h.01M15 7.5h.01M17.5 11.5h.01" stroke-width="2.8"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6a8 8 0 0 0-8-2v14a8 8 0 0 1 8 2 8 8 0 0 1 8-2V4a8 8 0 0 0-8 2Zm0 0v14"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-8 8 9 9 0 0 1-3.5-.7L4 20l1.2-4.1A8 8 0 1 1 20 11.5Z"/><path d="M8.5 11.5h7"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4m8-4v4M4 10h16m-11 5 2 2 4-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s7-3 7-10V5l-7-3-7 3v7c0 7 7 10 7 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3 7h4l2-3h6l2 3h4v13H3Z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5L2 9Zm4 2.1v5.5c4 2.8 8 2.8 12 0v-5.5M22 9v6"/></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3.2"/><path d="M3 20v-2a6 6 0 0 1 12 0v2H3ZM16 4a3 3 0 0 1 0 6m1 3a5 5 0 0 1 4 5v2h-3"/></symbol>
+</svg>
+<a class="skip" href="#main">Перейти до вмісту</a>
+<header class="header">
+  <div class="wrap nav-wrap">
+    <a class="brand" href="index.html" aria-label="Odesa Leaders School, головна">
+      <img class="brand-image" src="assets/logo.webp" width="47" height="47" alt=""><span class="brand-mark" hidden>L<span>.</span></span>
+      <span class="brand-text" lang="en">Leaders<span>School</span></span>
+    </a>
+    <nav id="navigation" class="nav" aria-label="Головна навігація">
+      <a href="index.html" class="nav-home">Головна</a>
+      <a href="about.html">Про школу</a>
+      <a href="programs.html">Навчання</a>
+      <a href="school-life.html">Шкільне життя</a>
+      <a href="news.html">Новини</a>
+      <a href="admissions.html" aria-current="page" class="nav-admissions">Вступ</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="design-button" type="button" id="open-design" aria-label="Обрати дизайн"><svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg><span><span class="design-verb">Обрати </span>дизайн</span></button>
+      <a class="button primary header-enroll" href="admissions.html?kind=tour#request"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Запис на зустріч</a>
+      <button class="icon-button menu-button" id="menu-button" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="navigation"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main" class="reference-page">
+  <section class="ref-admit" id="admissions">
+    <div class="wrap">
+      <nav class="breadcrumbs ref-admit-trail" aria-label="Шлях до сторінки"><a href="index.html">Головна</a><span aria-hidden="true">›</span><span aria-current="page">Запис на навчання</span></nav>
+      <div class="ref-admit-layout">
+        <div class="ref-admit-intro">
+          <h1>Запис на <span>навчання</span></h1>
+          <p>Зробіть перший крок до навчання вашої дитини в Leaders School.</p>
+          <ul class="ref-admit-benefits">
+            <li><span><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span><div><strong>Якісна освіта</strong><br>за сучасними програмами</div></li>
+            <li><span><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg></span><div><strong>Індивідуальний підхід</strong><br>до кожної дитини</div></li>
+            <li><span><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span><div><strong>Безпечне й комфортне</strong><br>середовище</div></li>
+            <li><span><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg></span><div><strong>Розвиток талантів</strong><br>і лідерських якостей</div></li>
+          </ul>
+        </div>
+        <div class="ref-admit-art">
+          <svg class="burst" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-spark"/></svg>
+          <img src="assets/mascot.webp" width="818" height="941" alt="Мальований хлопчик із зеленим ноутбуком" fetchpriority="high">
+        </div>
+        <div class="ref-admit-card" id="request">
+          <div class="ref-admit-card-head"><span><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span><div><h2 data-request-heading>Заявка на навчання</h2><p id="request-note">Заповніть форму, щоб підготувати лист до адміністрації школи.</p></div></div>
+          <form id="request-form" aria-describedby="request-note" action="mailto:odesa.leaders.school@gmail.com" method="post" enctype="text/plain">
+            <input name="kind" type="hidden" value="admission">
+            <label class="ref-field"><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg><span>Ім’я та прізвище батьків (заявника) <b>*</b><input name="name" type="text" autocomplete="name" required maxlength="100"></span></label>
+            <label class="ref-field"><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg><span>Ім’я дитини <b>*</b><input name="child" type="text" required maxlength="100"></span></label>
+            <label class="ref-field"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><span>Вік дитини <b>*</b><select name="age" required><option value="">Оберіть вік</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>Інший</option></select></span></label>
+            <label class="ref-field"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>Номер телефону <b>*</b><input name="phone" type="tel" autocomplete="tel" placeholder="+380" required maxlength="24" pattern="[+0-9\s\(\).\-]{7,24}" title="Вкажіть номер телефону, що містить щонайменше 7 цифр"></span></label>
+            <label class="ref-field"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span>Email <b>*</b><input name="email" type="email" autocomplete="email" placeholder="example@mail.com" required maxlength="120"></span></label>
+            <label class="ref-field"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg><span>Оберіть програму навчання <b>*</b><select name="grade" required><option value="">Оберіть програму</option><option>Початкова школа (1–4 класи)</option><option>Середня школа (5–9 класи)</option><option>Старша школа (10–11 класи)</option><option>Ще не визначилися</option></select></span></label>
+            <button class="button primary" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Підготувати заявку</button>
+            <p class="form-status" id="form-status" role="status" hidden></p>
+          </form>
+          <p class="ref-admit-note"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> Лист відкриється у вашій поштовій програмі. Ви зможете переглянути його перед надсиланням.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrap ref-admit-questions" aria-labelledby="admission-questions-title">
+    <h2 id="admission-questions-title">Запитання про вступ</h2>
+    <div class="admissions-questions">
+      <details><summary>У які класи можна вступити?</summary><p>Школа приймає звернення щодо вступу до 1–11 класів. Наявність місць у потрібному класі уточнюйте в адміністрації.</p></details>
+      <details><summary>Які документи потрібні для вступу?</summary><p>Актуальний перелік документів і правила прийому можна уточнити в <a href="contacts.html#contacts">адміністрації школи</a>.</p></details>
+      <details><summary>Як записатися на екскурсію?</summary><p><a href="admissions.html?kind=tour#request">Підготуйте заявку на екскурсію</a> або зателефонуйте, щоб домовитися про час візиту.</p></details>
+    </div>
+  </section>
+</main>
+<footer class="school-footer">
+  <div class="wrap footer-wrap">
+    <a class="brand" href="index.html" aria-label="Odesa Leaders School, головна">
+      <img class="brand-image" src="assets/logo.webp" width="47" height="47" alt=""><span class="brand-mark" hidden>L<span>.</span></span>
+      <span class="brand-text" lang="en">Leaders<span>School</span></span>
+    </a>
+    <p class="footer-motto">Освіта, що допомагає дітям розкрити свої здібності.</p>
+    <ul class="footer-contacts">
+      <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><a href="contacts.html">Курортний провулок, 2, будинок 1, Одеса</a></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+380671212555">+380 67 121 25 55</a></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:odesa.leaders.school@gmail.com">odesa.leaders.school@gmail.com</a></li>
+    </ul>
+    <ul class="footer-social" aria-label="Соціальні мережі школи">
+      <li><a href="https://www.instagram.com/odesa_leaders_school/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=61561097815403" target="_blank" rel="noopener">Facebook</a></li>
+    </ul>
+  </div>
+</footer>
+
+<dialog id="design-dialog" aria-labelledby="design-title">
+  <div class="dialog-head"><div><p class="eyebrow">Оформлення сайту</p><h2 id="design-title">Оберіть дизайн</h2></div><button class="icon-button close-dialog" type="button" aria-label="Закрити"><svg class="icon"><use href="#i-x"/></svg></button></div>
+  <p class="dialog-note">Перемикайте варіанти, щоб побачити зміни. Ваш вибір збережеться у цьому браузері.</p>
+  <div class="theme-options" role="group" aria-label="Варіанти дизайну">
+    <button class="theme-option" data-design="bright" type="button" aria-pressed="true"><span class="theme-preview theme-bright" aria-hidden="true"><i></i><b></b><img src="assets/mascot.webp" alt="" width="818" height="941"></span><span class="option-label"><span>Яскравий</span><svg class="icon"><use href="#i-check"/></svg></span><small>Фірмовий помаранчевий</small></button>
+    <button class="theme-option" data-design="editorial" type="button" aria-pressed="false"><span class="theme-preview theme-editorial" aria-hidden="true"><i></i><b></b><img src="assets/mascot.webp" alt="" width="818" height="941"></span><span class="option-label"><span>Академічний</span><svg class="icon"><use href="#i-check"/></svg></span><small>Молочний і бордовий</small></button>
+    <button class="theme-option" data-design="night" type="button" aria-pressed="false"><span class="theme-preview theme-night" aria-hidden="true"><i></i><b></b><img src="assets/mascot.webp" alt="" width="818" height="941"></span><span class="option-label"><span>Нічний</span><svg class="icon"><use href="#i-check"/></svg></span><small>Темно-синій і м’ятний</small></button>
+  </div>
+  <div class="dialog-foot"><button type="button" class="button primary close-dialog">Готово</button></div>
+</dialog>
+
+</body>
+</html>
